@@ -1,41 +1,41 @@
 {
-    "name": "gulp-custom-callback",
-    "version": "2.0.2",
-    "description": "Custom callback for streams",
-    "license": "MIT",
-    "repository": "Tiross/gulp-custom-callback",
-    "author": {
-        "name": "Alexander Krasnoyarov",
-        "email": "info@itgalaxy.company",
-        "url": "http://itgalaxy.company"
-    },
-    "engines": {
-        "node": ">=0.10.0"
-    },
-    "scripts": {
-        "test": "mocha test"
-    },
-    "files": [
-        "index.js"
-    ],
-    "keywords": [
-        "gulp",
-        "gulpplugin",
-        "gulpfriendly",
-        "callback",
-        "functions"
-    ],
-    "dependencies": {
-        "gulp-util": "~3.0.4",
-        "through2": "~2.0.3",
-        "lodash": "~4.17.2"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "should": "*",
-        "vinyl": "*",
-        "event-stream": "*",
-        "istanbul": "~0.4.5",
-        "coveralls": "~3.0.0"
-    }
+  "name": "gulp-custom-callback",
+  "version": "2.0.2",
+  "description": "Custom callback for streams",
+  "license": "MIT",
+  "repository": "Tiross/gulp-custom-callback",
+  "author": {
+    "name": "Alexander Krasnoyarov",
+    "email": "info@itgalaxy.company",
+    "url": "http://itgalaxy.company"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "cover": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc --reporter=text mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "gulpfriendly",
+    "callback",
+    "functions"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "plugin-error": "^1.0.1",
+    "through2": "^3.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "should": "^13.2.3",
+    "vinyl": "^2.2.0"
+  }
 }
