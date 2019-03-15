@@ -72,7 +72,7 @@ describe('gulp-callback', function() {
         };
         var stream = plugin(transformFunction, defaultOptions);
 
-        stream.on('data', function (data) { });
+        stream.on('data', function () {});
 
         stream.once('end', done);
 

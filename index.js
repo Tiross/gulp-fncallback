@@ -8,7 +8,12 @@ const PLUGIN_NAME = 'gulp-callback';
 module.exports = function (transformFunction, flushFunction, options) {
 
     if (!transformFunction && !flushFunction) {
-        throw new PluginError(PLUGIN_NAME, 'You have specified neither a valid transformFunction callback function nor a valid flushFunction callback function');
+        var message = [
+            'You have specified neither a valid transformFunction callback function',
+            'nor a valid flushFunction callback function',
+        ].join(' ');
+
+        throw new PluginError(PLUGIN_NAME, message);
     }
 
     if (transformFunction && typeof transformFunction !== 'function') {
