@@ -1,6 +1,6 @@
 {
   "name": "gulp-custom-callback",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "description": "Custom callback for streams",
   "license": "MIT",
   "repository": "Tiross/gulp-custom-callback",
