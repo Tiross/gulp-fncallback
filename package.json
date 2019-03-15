@@ -13,7 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha test"
+    "cover": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc --reporter=text mocha"
   },
   "files": [
     "index.js"
@@ -33,6 +34,7 @@
   "devDependencies": {
     "coveralls": "^3.0.3",
     "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
     "should": "^13.2.3",
     "vinyl": "^2.2.0"
   }
