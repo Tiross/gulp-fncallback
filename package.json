@@ -1,9 +1,9 @@
 {
-    "name": "gulp-fncallback",
+    "name": "gulp-custom-callback",
     "version": "2.0.2",
-    "description": "Callback for streams",
+    "description": "Custom callback for streams",
     "license": "MIT",
-    "repository": "itgalaxy-company/gulp-fncallback",
+    "repository": "Tiross/gulp-custom-callback",
     "author": {
         "name": "Alexander Krasnoyarov",
         "email": "info@itgalaxy.company",
