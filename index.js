@@ -1,7 +1,6 @@
-var through = require('through2');
-var gutil = require('gulp-util');
-var PluginError = gutil.PluginError;
 var lodash = require('lodash');
+var PluginError = require('plugin-error');
+var through = require('through2');
 
 const PLUGIN_NAME = 'gulp-callback';
 

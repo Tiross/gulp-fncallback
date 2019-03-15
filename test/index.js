@@ -6,9 +6,8 @@ var plugin = require('./../index');
 
 var should = require('should');
 var File = require('vinyl');
-var es = require('event-stream');
-var gutil = require('gulp-util');
 var path = require('path');
+var PluginError = require('plugin-error');
 var fs = require('fs');
 
 const PLUGIN_NAME = 'gulp-callback';
@@ -17,7 +16,7 @@ function createVinyl(fileName, contents) {
     var base = path.join(__dirname, 'fixtures');
     var filePath = path.join(base, fileName);
 
-    return new gutil.File({
+    return new File({
         cwd: __dirname,
         base: base,
         path: filePath,
@@ -27,7 +26,7 @@ function createVinyl(fileName, contents) {
 
 describe('gulp-callback', function() {
     it('should emit error when called plugin without arguments', function (done) {
-        var error = new gutil.PluginError(PLUGIN_NAME, 'You have specified neither a valid transformFunction callback function nor a valid flushFunction callback function');
+        var error = new PluginError(PLUGIN_NAME, 'You have specified neither a valid transformFunction callback function nor a valid flushFunction callback function');
 
         (function () {
             plugin();
@@ -37,7 +36,7 @@ describe('gulp-callback', function() {
     });
 
      it('should emit error when transformFunction is not function', function (done) {
-        var error = new gutil.PluginError(PLUGIN_NAME, 'transformFunction callback is not a function');
+        var error = new PluginError(PLUGIN_NAME, 'transformFunction callback is not a function');
 
         (function () {
             plugin({}, {});
@@ -47,7 +46,7 @@ describe('gulp-callback', function() {
      });
 
     it('should emit error when flushFunction callback is not a function', function (done) {
-        var error = new gutil.PluginError(PLUGIN_NAME, 'flushFunction callback is not a function');
+        var error = new PluginError(PLUGIN_NAME, 'flushFunction callback is not a function');
 
         (function () {
             plugin(
@@ -81,7 +80,7 @@ describe('gulp-callback', function() {
     });
 
     it('should emit error when options is not object', function (done) {
-        var error = new gutil.PluginError(PLUGIN_NAME, 'options is not an options object');
+        var error = new PluginError(PLUGIN_NAME, 'options is not an options object');
 
         (function () {
             plugin(
@@ -252,7 +251,7 @@ describe('gulp-callback', function() {
 
     it('should emit error when in transformFunction if pass first(error) argument', function (done) {
         var fakeFile = createVinyl('fakefile');
-        var error = new gutil.PluginError(PLUGIN_NAME, 'test error');
+        var error = new PluginError(PLUGIN_NAME, 'test error');
 
         var transformFunction = function (file, enc, callback, options) {
             callback('test error');
