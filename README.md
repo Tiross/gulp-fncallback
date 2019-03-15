@@ -1,21 +1,22 @@
-gulp-fncallback
+gulp-custom-callback
 =============
 
-[![Build Status](https://travis-ci.org/itgalaxy/gulp-fncallback.svg?branch=master)](https://travis-ci.org/itgalaxy/gulp-fncallback)
-[![Greenkeeper badge](https://badges.greenkeeper.io/itgalaxy/gulp-fncallback.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/Tiross/gulp-custom-callback.svg?branch=master)](https://travis-ci.org/Tiross/gulp-custom-callback)
+[![Coverage Status](https://coveralls.io/repos/github/Tiross/gulp-custom-callback/badge.svg?branch=master)](https://coveralls.io/github/Tiross/gulp-custom-callback?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Tiross/gulp-custom-callback.svg)](https://greenkeeper.io/)
 
 Add own callback to streaming
 
 ## Install
 
 ```
-npm install gulp-fncallback
+npm install --dev gulp-custom-callback
 ```
 
 ## Usage transformFunction
 ```javascript
 var less = require('gulp-less');
-var callback = require('gulp-fncallback');
+var callback = require('gulp-custom-callback');
 
 gulp.task('less', function () {
   gulp.src('./less/**/*.less')
@@ -33,7 +34,7 @@ gulp.task('less', function () {
 ## Usage transformFunction and flushFunction
 ```javascript
 var less = require('gulp-less');
-var callback = require('gulp-fncallback');
+var callback = require('gulp-custom-callback');
 
 gulp.task('less', function () {
   gulp.src('./less/**/*.less')
@@ -53,7 +54,7 @@ gulp.task('less', function () {
 ## Usage transformFunction with error
 ```javascript
 var less = require('gulp-less');
-var callback = require('gulp-fncallback');
+var callback = require('gulp-custom-callback');
 
 gulp.task('less', function () {
   gulp.src('./less/**/*.less')
@@ -71,7 +72,7 @@ gulp.task('less', function () {
 ## Usage transformFunction with new file
 ```javascript
 var less = require('gulp-less');
-var callback = require('gulp-fncallback');
+var callback = require('gulp-custom-callback');
 
 gulp.task('less', function () {
   gulp.src('./less/**/*.less')
@@ -89,7 +90,7 @@ gulp.task('less', function () {
 ## Usage transformFunction with new file and append old file
 ```javascript
 var less = require('gulp-less');
-var callback = require('gulp-fncallback');
+var callback = require('gulp-custom-callback');
 
 gulp.task('less', function () {
   gulp.src('./less/**/*.less')
@@ -109,7 +110,7 @@ gulp.task('less', function () {
 once - Run callback once
 ```javascript
 var less = require('gulp-less');
-var callback = require('gulp-fncallback');
+var callback = require('gulp-custom-callback');
 
 gulp.task('less', function () {
   gulp.src('./less/**/*.less')
@@ -125,4 +126,3 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./public/css'));
 });
 ```
-
