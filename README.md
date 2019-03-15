@@ -2,6 +2,7 @@ gulp-custom-callback
 =============
 
 [![Build Status](https://travis-ci.org/Tiross/gulp-custom-callback.svg?branch=master)](https://travis-ci.org/Tiross/gulp-custom-callback)
+[![Coverage Status](https://coveralls.io/repos/github/Tiross/gulp-custom-callback/badge.svg?branch=master)](https://coveralls.io/github/Tiross/gulp-custom-callback?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Tiross/gulp-custom-callback.svg)](https://greenkeeper.io/)
 
 Add own callback to streaming
