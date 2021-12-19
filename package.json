@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "cover": "nyc report --reporter=text-lcov | coveralls",
+    "cover": "nyc report --reporter=lcov",
     "test": "nyc --reporter=text mocha"
   },
   "files": [
