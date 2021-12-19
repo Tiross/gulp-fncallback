@@ -2,9 +2,9 @@ gulp-custom-callback
 =============
 
 [![npm version](https://badge.fury.io/js/gulp-custom-callback.svg)](https://www.npmjs.com/package/gulp-custom-callback)
-[![Build status](https://github.com/Tiross/gulp-custom-callback/actions/workflows/build.yml/badge.svg)](https://github.com/Tiross/gulp-custom-callback/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/github/Tiross/gulp-custom-callback/badge.svg?branch=master)](https://coveralls.io/github/Tiross/gulp-custom-callback?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/Tiross/gulp-custom-callback.svg)](https://greenkeeper.io/)
+[![build status](https://github.com/Tiross/gulp-custom-callback/actions/workflows/build.yml/badge.svg)](https://github.com/Tiross/gulp-custom-callback/actions/workflows/build.yml)
+[![coverage status](https://coveralls.io/repos/github/Tiross/gulp-custom-callback/badge.svg?branch=master)](https://coveralls.io/github/Tiross/gulp-custom-callback?branch=master)
+![snyk](https://snyk-widget.herokuapp.com/badge/npm/gulp-custom-callback/badge.svg)
 
 Add own callback to streaming
 
