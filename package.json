@@ -9,6 +9,7 @@
     "email": "info@itgalaxy.company",
     "url": "http://itgalaxy.company"
   },
+  "packageManager": "pnpm@^7.9.0",
   "engines": {
     "node": ">=0.10.0"
   },
