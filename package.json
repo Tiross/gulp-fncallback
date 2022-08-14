@@ -9,8 +9,9 @@
     "email": "info@itgalaxy.company",
     "url": "http://itgalaxy.company"
   },
+  "packageManager": "pnpm@^7.9.0",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=12"
   },
   "scripts": {
     "cover": "nyc report --reporter=lcov",
@@ -28,12 +29,12 @@
   ],
   "dependencies": {
     "lodash": "^4.17.11",
-    "plugin-error": "^1.0.1",
+    "plugin-error": "^2.0.0",
     "through2": "^4.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.3",
-    "mocha": "^9.1.0",
+    "mocha": "^10.0.0",
     "nyc": "^15.0.0",
     "should": "^13.2.3",
     "vinyl": "^2.2.0"

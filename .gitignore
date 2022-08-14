@@ -4,6 +4,6 @@
 
 
 .nyc_output/
+.pnpm-store/
 coverage
 node_modules
-npm-debug.log

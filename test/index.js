@@ -4,7 +4,6 @@
 /* exported should */
 var plugin = require('./../index');
 
-var should = require('should');
 var File = require('vinyl');
 var path = require('path');
 var PluginError = require('plugin-error');
